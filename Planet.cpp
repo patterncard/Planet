@@ -21,6 +21,6 @@ public:
 
 int main()
 {
-	//std::cout << foodAmounttt << std::endl;
+	std::cout << "foodAmounttt" << std::endl;
 	return 0;
 }
