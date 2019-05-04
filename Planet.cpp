@@ -20,6 +20,6 @@ public:
 
 int main()
 {
-	//std::cout << foodAmount << std::endl;
+	//std::cout << foodAmountt << std::endl;
 	return 0;
 }
