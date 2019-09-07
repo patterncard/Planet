@@ -11,6 +11,8 @@ private:
     string name;
     int age;
     int foodAmount;
+public:
+void setAge();
 };
 
 #endif

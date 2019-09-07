@@ -1,10 +1,11 @@
 #include <iostream>
 #include <string>
+#include <ctime>
 #include "../include/Planet.h"
 using namespace std;
 
 int main()
 {
-	Planet Earth;
-	std::cout << "There is food." << std::endl;
+    time_t result = time(nullptr);
+    cout << asctime(localtime(&result));
 }
