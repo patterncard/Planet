@@ -6,6 +6,17 @@ using namespace std;
 
 class Planet
 {
+
+public:
+
+    Planet(int name, int age)
+    {
+        this->age = age;
+        this->name = name;
+        this->foodAmount = rand() % 30000 + 15;
+        void setAge(int age);
+    }
+
 private:
     string name;
     int age;
@@ -43,34 +54,8 @@ private:
         }
     }
 
-    Planet(int name, int age)
-    {
-        this->age = age;
-        this->name = name;
-        this->foodAmount = rand() % 30000 + 15;
-        void setAge(int age);
-    }
-
     ~Planet()
     {
-        cout << "Object of class Planet was destroyed" << endl;
+        std::cout << "Object of class Planet was destroyed" << std::endl;
     }
 };
-
-class Organism
-{
-    bool alive;
-    Organism &Organism ::operator=(const Planet &o);
-    Organism()
-    {
-    }
-
-    ~Organism()
-    {
-        cout << "Object of class Organism was destroyed" << endl;
-    }
-};
-
-int main()
-{
-}

@@ -11,8 +11,9 @@ private:
     string name;
     int age;
     int foodAmount;
-public:
-void setAge();
+    void setAge();
+    Planet(int name, int age);
+
 };
 
 #endif
